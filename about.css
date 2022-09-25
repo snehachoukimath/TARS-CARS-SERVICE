@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100;
+    background-image: linear-gradient(rgba(4,9,3,0.7),rgba(4,9,3,0.7)),url(https://thumbs.dreamstime.com/b/worker-uniform-disassembles-vehicle-engine-car-service-station-automobile-checking-inspection-professional-diagnostics-173424972.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nav-links ul li::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background: #d4f037;
+    display: block;
+    margin: auto;
+    transition: 0.2s;
+
+}
+
+.nav-links ul li:hover::after{
+    width: 90%;
+
+}
+
+.text-box{
+    width: 60%;
+    color: #fff;
+    position:absolute;
+    top:55%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-box h1{
+    font-size: 60px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+    color: #fff;
+
+}
+.text-box img{
+  padding-bottom: 10%;
+
+}
+nav . fa{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+
+}
+.nav-links ul li{
+    display: block;
+
+}
+.nav-links{
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right:-200px;
+    text-align: left;
+    z-index: 2;
+}
+nav . fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+}
+/*---------services rendered----*/
+
+.bodyshopdetails{
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    min-height: 100vh;
+    width: 100;
+    background-image: linear-gradient(rgba(4,9,3,0.7),rgba(4,9,3,0.7)),url(https://images.prismic.io/leasefetcher/b33f0784-a3e3-4f5d-839e-3d2c1bc55594_types-car-serivce.jpg?auto=compress,format);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.bodyshopdetails h1{
+    font-size:60px;
+    font-weight: 600;
+    color: #EAE2E0;
+    top: 10%;
+}
+.bodyshopdetails p{
+    color: #F1E443;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    font-style: oblique;
+}
+
+.row{
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.repairs-col{
+    flex-basis: 31%;
+    background-color: #383404;
+    border-radius: 5px;
+    margin-bottom: 1%;
+    padding: 10px 12px;
+    box-sizing:content-box;
+    transition: 0.5s;
+    color: #EAE2E0;
+}
+
+h3:hover{
+    font-weight: 600;
+    margin: 5px 0;
+    color: #EAE2E0;
+    text-align: center;
+
+}
+.repairs-col{
+    box-shadow: 0 0 23px 0px rgba(28,7,99,0.2);
+}
+
+/*---------customer reviews----*/
+
+.customer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+    background-color:
+}
+p{
+    color: #444;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.happy-col{
+    flex-basis: 31%;
+    background: #E1DC98;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.happy-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
